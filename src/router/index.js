@@ -7,6 +7,9 @@ const routerOptions = [
   { path: '/signin', component: 'Signin' },
   { path: '/signup', component: 'Signup' },
   { path: '/home', component: 'Home', meta: { requiresAuth: true } },
+  { path: '/films', component: 'ListFilms', meta: { requiresAuth: true } },
+  { path: '/films/:slug', component: 'FilmDetails', meta: { requiresAuth: true } },
+  { path: '/add_film', component: 'AddFilm', meta: { requiresAuth: true } },
   { path: '*', component: 'NotFound' }
 ]
 

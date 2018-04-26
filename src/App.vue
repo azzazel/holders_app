@@ -46,11 +46,11 @@
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
-    
+
     <v-content>
       <router-view></router-view>
     </v-content>
-    
+
   </v-app>
 </template>
 
@@ -77,7 +77,9 @@
       menuItems () {
         if (this.isAuthenticated) {
           return [
-            { title: 'Home', path: '/home', icon: 'home' }
+            { title: 'Home', path: '/home', icon: 'home' },
+            { title: 'Films', path: '/films', icon: 'camera' },
+            { title: 'AddFilms', path: '/add_film', icon: 'camera' }
           ]
         } else {
           return [
