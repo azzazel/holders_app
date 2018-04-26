@@ -1,10 +1,10 @@
-# basic-spa-vue-firebase
+# Photography Holder App
 
 > A Vue.js project
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
