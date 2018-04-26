@@ -9,7 +9,7 @@
         <v-flex xs12 sm6 offset-sm3 mt-3 class="text-xs-left" mt-5>
         <h3>Films Of {{this.$store.getters.user.email}}</h3>
         <v-list>
-          <v-list-tile v-for="(holder, index) in holders"
+          <v-list-tile v-for="holder in holders"
           :key="holder['.key'].split('_')[1]"
           :to="'films/' + holder['.key'].split('_')[0]" >
              {{holder.film_name}} - total {{holder.shots}} shots

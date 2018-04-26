@@ -48,20 +48,21 @@ export default {
     return {
       film_name: '',
       status: 0,
-      shots: '',
-      alert: false
+      alert: false,
+      shots_count: '',
+      shots: []
     }
   },
   computed: {
-    comparePasswords () {
-      return this.password === this.passwordConfirm ? true : 'Passwords don\'t match'
-    },
-    error () {
-      return this.$store.state.error
-    },
-    loading () {
-      return this.$store.state.loading
-    }
+    // comparePasswords () {
+    //   return this.password === this.passwordConfirm ? true : 'Passwords don\'t match'
+    // },
+    // error () {
+    //   return this.$store.state.error
+    // },
+    // loading () {
+    //   return this.$store.state.loading
+    // }
   },
   methods: {
     addFilm () {
